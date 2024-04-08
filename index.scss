@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+@import 'scss/hero';
+@import 'scss/navbar';
+@import 'scss/footer';
+@import 'scss/catalog';
+@import 'scss/banner';
+@import 'scss/about';
+
+p{
+    font-family: "new-zen", sans-serif !important;
+}

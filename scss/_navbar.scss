@@ -1,0 +1,38 @@
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:5;
+    display:flex;
+
+    align-items: center;
+    margin-top:1vw;
+    width:100vw;
+    gap:0vw;
+    img{
+        height:6vw;
+    }
+    a{
+        text-decoration: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid black;
+       
+        color: #5F6646;
+        font-family: "soap", sans-serif;
+        font-size:1.6vw;
+        border-radius:20vw;
+        padding:.5vw;
+        transition: .5s all;
+        &:hover{
+            background-color: #5F6646;;
+            color:antiquewhite;
+        }
+    }
+ 
+   
+    a:nth-child(1),a:nth-child(3){
+        height:2vw;
+    }
+}

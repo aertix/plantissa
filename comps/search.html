@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gev3uyu.css">
+    <script defer src="../js/plant.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Plantissa</title>
+    <link rel="icon" href="../media/logo.png">
+    <script>
+        $(function () {
+            $("#navbar-placeholder").load("../comps/navbar.html");
+        });
+    </script>
+    <div id="navbar-placeholder"></div>
+</head>
+
+<body>
+    
+  <!-- Search Section -->
+  <section class="search">
+    <div>
+        <h1>
+            Plant Species Search Tool
+        </h1>
+    </div>
+    <h1>Search For Your Favorite Plant Here ↓ ↓</h1>
+    <input type="text" id="searchQuery" placeholder="Enter search term...">
+    <button id="searchButton">Search</button>
+</section>
+
+    
+<section class="catalog" id="catalog"></section>
+</section>
+
+<script>
+    $(function () {
+        $("#footer-placeholder").load("../comps/footer.html");
+    });
+</script>
+<div id="footer-placeholder"></div>
+</body>
+</html>
+  
