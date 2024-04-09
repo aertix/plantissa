@@ -66,6 +66,29 @@ body {
   color: antiquewhite;
 }
 
+@media (max-width: 500px) {
+  .hero {
+    height: 150vw;
+    justify-content: flex-start;
+  }
+  .hero h1 {
+    margin-top: 30vw;
+    font-size: 15vw;
+    color: #435500;
+  }
+  .hero h2 {
+    font-size: 8vw;
+    width: 80vw;
+    color: #435500;
+  }
+  .hero p {
+    display: none;
+  }
+  .hero button {
+    font-size: 8.6vw;
+    color: #435500;
+  }
+}
 .navbar {
   position: absolute;
   top: 0;
@@ -85,8 +108,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  color: #5F6646;
+  border: 2px solid rgb(73, 100, 37);
+  text-shadow: whitesmoke 1px 1px 1px;
+  color: #3c4811;
   font-family: "soap", sans-serif;
   font-size: 1.6vw;
   border-radius: 20vw;
@@ -96,11 +120,26 @@ body {
 .navbar a:hover {
   background-color: #5F6646;
   color: antiquewhite;
+  text-shadow: none;
 }
 .navbar a:nth-child(1), .navbar a:nth-child(3) {
   height: 2vw;
 }
 
+@media (max-width: 500px) {
+  .navbar {
+    margin-top: 0vw;
+    padding-top: 2vw;
+  }
+  .navbar img {
+    height: 14vw;
+  }
+  .navbar a {
+    text-shadow: whitesmoke 1px 1px 1px;
+    font-size: 6.6vw;
+    padding: 2.5vw;
+  }
+}
 .footer {
   display: flex;
   flex-direction: row;
@@ -125,6 +164,7 @@ body {
   border-radius: 10vw;
   color: black;
   padding: 0.2vw 1vw;
+  font-family: "new-zen", sans-serif !important;
   margin: 0;
 }
 .footer div a:hover {
@@ -145,6 +185,43 @@ body {
   height: 100%;
 }
 
+@media (max-width: 500px) {
+  .divider2 {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    width: 100vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider2 section {
+    width: 80%;
+    height: 100%;
+    border-radius: 4vw;
+    background-color: #425500;
+  }
+  .footer {
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer div {
+    width: 90%;
+    align-items: center;
+  }
+  .footer div h1 {
+    font-size: 8.8vw;
+    margin: 0;
+  }
+  .footer div a {
+    font-size: 6vw;
+  }
+  .footer div img {
+    display: none;
+  }
+}
 .search {
   display: flex;
   gap: 1vw;
@@ -165,6 +242,7 @@ body {
 }
 .search div h1 {
   font-size: 6vw;
+  text-shadow: whitesmoke 1px 1px 1px;
   width: 80vw;
   text-align: center;
   color: #2b3600;
@@ -189,7 +267,7 @@ body {
   transition: 0.5s all;
 }
 .search button:hover, .search input:hover {
-  color: antiquewhite;
+  color: rgb(37, 44, 34);
   outline: black;
   caret-color: #5F6646;
 }
@@ -206,7 +284,6 @@ body {
   flex-wrap: wrap;
   gap: 2vw;
   margin-bottom: 4vw;
-  display: flex;
   justify-content: center;
 }
 .catalog div {
@@ -263,6 +340,49 @@ body {
   color: antiquewhite;
 }
 
+@media (max-width: 500px) {
+  .search {
+    gap: 4vw;
+    height: 180vw;
+  }
+  .search div h1 {
+    margin-top: 12vw;
+    text-shadow: whitesmoke 1px 1px 1px;
+    font-size: 14vw;
+    text-align: center;
+  }
+  .search h1 {
+    font-size: 8vw;
+    width: 90%;
+    text-align: center;
+  }
+  .search button, .search input {
+    height: auto;
+    font-size: 5.6vw;
+    max-width: 80%;
+    padding: 3vw;
+  }
+  .search button {
+    padding: 4.5vw;
+    font-size: 7vw;
+  }
+  .catalog {
+    width: 100%;
+    gap: 5vw;
+  }
+  .catalog div {
+    border-radius: 10vw;
+    height: 85vw;
+    width: 85vw;
+  }
+  .catalog div h2 {
+    text-align: center;
+  }
+  .buttonDiv button {
+    font-size: 4.6vw;
+    padding: 3.5vw;
+  }
+}
 .banner {
   width: 100%;
   height: 40vw;
@@ -313,6 +433,27 @@ body {
   color: antiquewhite;
 }
 
+@media (max-width: 500px) {
+  .banner {
+    height: auto;
+    gap: 2vw;
+    padding-top: 8vw;
+  }
+  .banner h1 {
+    font-size: 8vw;
+    width: 90%;
+  }
+  .banner div {
+    gap: 3vw;
+  }
+  .banner div p {
+    font-size: 6vw;
+  }
+  .banner div button {
+    font-size: 5.6vw;
+    padding: 2.5vw;
+  }
+}
 .about {
   display: flex;
   margin-top: 4vw;
@@ -353,7 +494,7 @@ body {
 }
 .about div section img {
   height: 50vw;
-  animation: 10s spin linear infinite;
+  animation: 15s spin linear infinite;
 }
 
 @keyframes spin {
@@ -401,6 +542,53 @@ body {
   width: 60vw;
 }
 
+@media (max-width: 500px) {
+  .about {
+    margin-top: 20vw;
+    padding-top: 8vw;
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 4vw;
+  }
+  .about div {
+    width: 90%;
+  }
+  .about div h1, .about div p {
+    text-align: center;
+  }
+  .about div h1 {
+    font-size: 10vw;
+    width: 75vw;
+  }
+  .about div p {
+    font-size: 4.7vw;
+    width: 75vw;
+  }
+  .about div section {
+    height: 70vw;
+    width: 69vw;
+  }
+  .about div section img {
+    height: 90vw;
+  }
+  .divider {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .journey {
+    gap: 4vw;
+  }
+  .journey img {
+    height: 50vw;
+  }
+  .journey h1 {
+    font-size: 8vw;
+  }
+  .journey p {
+    font-size: 5vw;
+    width: 80vw;
+  }
+}
 p {
   font-family: "new-zen", sans-serif !important;
 }/*# sourceMappingURL=index.css.map */

@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-gap:1vw;
+    gap:1vw;
     h1{
         font-size:7vw;
         text-align: center;
@@ -33,21 +33,45 @@ gap:1vw;
         text-decoration: none;
     }
     button{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            border:2px solid black;
-            cursor:pointer;
-            color: #5F6646;
-            font-family: "soap", sans-serif;
-            font-size:1.6vw;
-            border-radius:20vw;
-            padding:.5vw;
-            transition: .5s all;
-            &:hover{
-                background-color: #5F6646;;
-                color:antiquewhite;
-            }
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid black;
+        cursor:pointer;
+        color: #5F6646;
+        font-family: "soap", sans-serif;
+        font-size:1.6vw;
+        border-radius:20vw;
+        padding:.5vw;
+        transition: .5s all;
+        &:hover{
+            background-color: #5F6646;
+            color:antiquewhite;
+        }
+    }
+}
 
+// mobile
+@media(max-width:500px){
+    .hero{
+        height:150vw;
+        justify-content: flex-start;
+        h1{
+            margin-top:30vw;
+            font-size:15vw;
+            color:#435500;
+        }
+        h2{
+            font-size:8vw;
+            width:80vw;
+            color:#435500;
+        }
+        p{
+            display:none;
+        }
+        button{
+            font-size:8.6vw;
+            color: #435500;
+        }
     }
 }

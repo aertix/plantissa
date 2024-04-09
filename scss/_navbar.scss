@@ -17,9 +17,9 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        border:2px solid black;
-       
-        color: #5F6646;
+        border:2px solid rgb(73, 100, 37);
+        text-shadow: whitesmoke 1px 1px 1px;
+        color: #3c4811;
         font-family: "soap", sans-serif;
         font-size:1.6vw;
         border-radius:20vw;
@@ -28,11 +28,27 @@
         &:hover{
             background-color: #5F6646;;
             color:antiquewhite;
+            text-shadow:none;
         }
     }
  
    
     a:nth-child(1),a:nth-child(3){
         height:2vw;
+    }
+}
+
+@media(max-width:500px){
+    .navbar{
+        margin-top:0vw;
+        padding-top:2vw;
+        img{
+            height:14vw;
+        }
+        a{
+            text-shadow: whitesmoke 1px 1px 1px;
+            font-size:6.6vw;
+            padding:2.5vw;
+        }
     }
 }

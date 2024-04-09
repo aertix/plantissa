@@ -41,8 +41,30 @@
             padding:.5vw;
             transition: .5s all;
             &:hover{
-                background-color: #5F6646;;
+                background-color: #5F6646;
                 color:antiquewhite;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .banner{
+        height:auto;
+        gap:2vw;
+        padding-top:8vw;
+        h1{
+            font-size:8vw;
+            width:90%;
+        }
+        div{
+            gap:3vw;
+            p{
+                font-size:6vw;
+            }
+            button{
+                font-size:5.6vw;
+                padding:2.5vw;
             }
         }
     }
