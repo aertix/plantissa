@@ -18,7 +18,7 @@
             font-size:6vw;
             width:80vw;
             text-align: center;
-            color: #3f5000;
+            color: #2b3600;
             font-family: "soap", sans-serif;
         }
     }
@@ -59,7 +59,9 @@
     flex-wrap: wrap;
     gap:2vw;
     margin-bottom:4vw;
-   
+    display:flex;
+    justify-content: center;
+  
     div{
         position:relative;
         height:20vw;
@@ -93,4 +95,26 @@
 
         }
     }
+}
+.buttonDiv{
+    button{
+        text-decoration: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid black;
+        display:none;
+       cursor:pointer;
+        color: #5F6646;
+        font-family: "soap", sans-serif;
+        font-size:1.6vw;
+        border-radius:20vw;
+        padding:.5vw;
+        transition: .5s all;
+        margin-bottom:2vw;
+        &:hover{
+            background-color: #5F6646;;
+            color:antiquewhite;
+        }
+       }
 }

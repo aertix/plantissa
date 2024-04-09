@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -163,7 +167,7 @@ body {
   font-size: 6vw;
   width: 80vw;
   text-align: center;
-  color: #3f5000;
+  color: #2b3600;
   font-family: "soap", sans-serif;
 }
 .search h1 {
@@ -202,6 +206,8 @@ body {
   flex-wrap: wrap;
   gap: 2vw;
   margin-bottom: 4vw;
+  display: flex;
+  justify-content: center;
 }
 .catalog div {
   position: relative;
@@ -234,6 +240,27 @@ body {
 .catalog div section p {
   color: #8aa528;
   font-family: "soap", sans-serif;
+}
+
+.buttonDiv button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  display: none;
+  cursor: pointer;
+  color: #5F6646;
+  font-family: "soap", sans-serif;
+  font-size: 1.6vw;
+  border-radius: 20vw;
+  padding: 0.5vw;
+  transition: 0.5s all;
+  margin-bottom: 2vw;
+}
+.buttonDiv button:hover {
+  background-color: #5F6646;
+  color: antiquewhite;
 }
 
 .banner {
