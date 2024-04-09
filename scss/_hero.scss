@@ -1,5 +1,4 @@
 .hero{
-    
     background-image:url("media/hero.jpg");
     background-size:cover;
     width:100%;
@@ -42,7 +41,7 @@
         font-family: "soap", sans-serif;
         font-size:1.6vw;
         border-radius:20vw;
-        padding:.5vw;
+        padding:.5vw 2vw;
         transition: .5s all;
         &:hover{
             background-color: #5F6646;

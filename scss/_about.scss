@@ -83,11 +83,11 @@
 
 @media(max-width:500px){
     .about{
-        margin-top:20vw;
+        margin-top:28vw;
         padding-top:8vw;
         flex-direction: column-reverse;
         height:auto;
-        gap:4vw;
+        gap:14vw;
         div{
             width:90%;
             h1, p{
@@ -102,10 +102,10 @@
                 width:75vw;
             }
             section{
-                height:70vw;
-                width:69vw;
+                height:60vw;
+                width:58vw;
                 img{
-                    height:90vw;
+                    height:100vw;
                 }
             }
         }

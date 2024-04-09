@@ -58,7 +58,7 @@ body {
   font-family: "soap", sans-serif;
   font-size: 1.6vw;
   border-radius: 20vw;
-  padding: 0.5vw;
+  padding: 0.5vw 2vw;
   transition: 0.5s all;
 }
 .hero button:hover {
@@ -114,13 +114,16 @@ body {
   font-family: "soap", sans-serif;
   font-size: 1.6vw;
   border-radius: 20vw;
-  padding: 0.5vw;
+  padding: 0.5vw 1vw;
   transition: 0.5s all;
 }
 .navbar a:hover {
   background-color: #5F6646;
   color: antiquewhite;
   text-shadow: none;
+}
+.navbar a:nth-child(2) {
+  padding: 0.5vw 0.5vw;
 }
 .navbar a:nth-child(1), .navbar a:nth-child(3) {
   height: 2vw;
@@ -544,11 +547,11 @@ body {
 
 @media (max-width: 500px) {
   .about {
-    margin-top: 20vw;
+    margin-top: 28vw;
     padding-top: 8vw;
     flex-direction: column-reverse;
     height: auto;
-    gap: 4vw;
+    gap: 14vw;
   }
   .about div {
     width: 90%;
@@ -565,11 +568,11 @@ body {
     width: 75vw;
   }
   .about div section {
-    height: 70vw;
-    width: 69vw;
+    height: 60vw;
+    width: 58vw;
   }
   .about div section img {
-    height: 90vw;
+    height: 100vw;
   }
   .divider {
     margin-top: 5vw;
